@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+
+    <title>Bootstrap Instagram</title>
+  </head>
+<body> 
+
+
+
+   <nav class="navbar navbar-light bg-light fixed-top">
+        <a class="navbar-brand">
+            <img id="instagram" src="https://i2.wp.com/www.sleepapnea.org/wp-content/uploads/2017/04/instagram-logo.png?ssl=1" alt="instagram">
+        </a>
+        <form class="form-inline">
+          <button class="btn btn-success" data-target="#postModal" data-toggle="modal">Create New Post</button> &nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="dropdown">
+            <i class="fas fa-cog" type="button"     id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            </i>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>
+        </form>
+      </nav>
+      
+      
+       <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Creat New Post</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">New Post...</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                </form>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+
+  
+  
+  <br><br>
+  
+    <div class="container">
+  
+      <ul class="nav justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+            <button type="button" class="btn btn-secondary"><i class="fas fa-th"></i></button>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+            <button type="button" class="btn btn-secondary"><i class="fas fa-square"></i></button>
+          </a>
+        </li>
+  
+      </ul>
+      
+      
+      <div class="tab-content" id="pills-tabContent">
+        
+        
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+          <div class="row">
+            <div class="col">
+              <img id="postImage" src="http://bulldog-puppies.com/wp-content/uploads/2018/09/french-bulldog.jpg" alt="Puppy1">
+            </div>
+            <div class="col">
+              <img id="postImage" src="https://i.pinimg.com/originals/0a/8a/20/0a8a203409b1eb902a81d3f282e37f38.jpg" alt="Puppy2">
+            </div>
+            <div class="col">
+              <img id="postImage" src="http://fallinpets.com/wp-content/uploads/2017/02/All-Black-French-Bulldog-puppy-564x445.jpg" alt="Puppy3">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+                <img id="postImage" src="https://www.petlandrome.com/wp-content/uploads/2019/01/1284602_800.jpg" alt="Puppy4">
+            </div>
+            <div class="col">
+              <img id="postImage" src="https://static.scientificamerican.com/sciam/cache/file/D059BC4A-CCF3-4495-849ABBAFAED10456_source.jpg?w=590&h=800&526ED1E1-34FF-4472-B348B8B4769AB2A1" alt="Puppy5">
+            </div>
+            <div class="col">
+              <img id="postImage" src="https://cdn1-www.dogtime.com/assets/uploads/2010/12/puppies.jpg" alt="Puppy6">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img id="postImage" src="https://thumbs-prod.si-cdn.com/X_8oA8_P57VZtb6CheHfQdX_8hg=/800x600/filters:no_upscale():focal(1501x569:1502x570)/https://public-media.si-cdn.com/filer/1e/1e/1e1e3aea-e930-45d2-9bc4-6dd50cccf66d/istock-511313058.jpg" alt="Puppy7">
+            </div>
+            <div class="col">
+              <img id="postImage" src="https://pbs.twimg.com/profile_images/446566229210181632/2IeTff-V_400x400.jpeg" alt="Puppy8">
+            </div>
+            <div class="col">
+              <img id="postImage" src="https://www.popsci.com/sites/popsci.com/files/styles/1000_1x_/public/images/2017/10/terrier-puppy.jpg?itok=rIgh3ArV&fc=50,50" alt="Puppy9">
+            </div>
+          </div>
+        </div>
+        
+        
+        
+        
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+          <div class="wrapper">
+  
+      
+              <div class="post">
+                <h3>Toni Loves to Play in the Grass.</h3>
+                <div class="date"> 10/11</div>
+                <hr>
+                <img id="postImage" src="http://bulldog-puppies.com/wp-content/uploads/2018/09/french-bulldog.jpg" alt="Puppy1">
+                <hr>
+                <p>This little booger can't get enough of our backyard! As soon as he wakes up, hes begging by the back door!</p><br>
+              </div>
+           </div>
+      
+            <br>
+            <div class="wrapper">
+      
+              <div class="post">
+                <h3>Lele is Judging You!</h3>
+                <div class="date"> 10/12</div>
+                <hr>
+                <img id="postImage" src="https://i.pinimg.com/originals/0a/8a/20/0a8a203409b1eb902a81d3f282e37f38.jpg" alt="Puppy2">
+                <hr>
+                <p>Lele saw you getting that extra scoop of icecream last night. Shes judging but she ain't no snitch!</p><br>
+              </div>
+            </div>
+      
+            <br>
+      
+            <div class="wrapper">
+      
+              <div class="post">
+                <h3>Hickup Plays Hide and Seek.</h3>
+                <div class="date"> 10/13</div>
+                <hr>
+                <img id="postImage" src="http://fallinpets.com/wp-content/uploads/2017/02/All-Black-French-Bulldog-puppy-564x445.jpg" alt="Puppy3">
+                <hr>
+                <p>Hickup's favorite hiding spot is our bed sheets. Too bad he sticks out like a sore thumb!</p><br>
+              </div>
+            </div>
+      
+            <br>
+      
+            <div class="wrapper">
+      
+              <div class="post">
+                <h3>Toto Had An Accident!</h3>
+                <div class="date"> 10/14</div>
+                <hr>
+                <img id="postImage" src="https://www.petlandrome.com/wp-content/uploads/2019/01/1284602_800.jpg" alt="Puppy4">
+                <hr>
+                <p>Toto took a tinkle on the carpet again. He gave us this look and all was forgiven.</p><br>
+              </div>
+            </div>
+      
+            <br>
+      
+            <div class="wrapper">
+      
+              <div class="post">
+                <h3>Where's Judy's Treat?</h3>
+                <div class="date"> 10/15</div>
+                <hr>
+                <img id="postImage" src="https://i.pinimg.com/originals/87/f9/90/87f99031a6ebd013f14758e61f3b0512.jpg" alt="Puppy5">
+                <hr>
+                <p>Judy was a good girl and warned you about the squirrel, and the mail man... and the vacuum... Now, she waits patiently for her treat.</p><br>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
